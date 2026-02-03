@@ -36,7 +36,7 @@ function MyApp() {
   }, []);
 
   function removeCharacter(index) {
-    const id = characters[index].id;
+    const id = characters[index]._id;
     deleteUser(id)
       .then((res) => {
         if (res.status === 204) {
